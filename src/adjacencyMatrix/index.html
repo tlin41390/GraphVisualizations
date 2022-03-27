@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        .grid {
+            stroke: #9A8B7A;
+            stroke-width: 1px; fill: #CF7D1C;
+        } 
+        #tooltip {
+        position: absolute;
+        width: 200px;
+       height: auto;
+        padding: 10px;
+        background-color: white;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+  }
+
+  #tooltip.hidden {
+      display: none;
+  }
+
+  #tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+    </style>
+    <title>D3 AdjacencyMatrix</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div id="tooltip" class="hidden">
+    <p><strong>Tribe Value</strong></p>
+    <p><span id="value"></span></p>
+  </div>
+
+    <script src = "adjacencymatrix.js"></script>
+  </body>
+</html>
